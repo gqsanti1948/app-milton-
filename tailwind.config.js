@@ -8,19 +8,19 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0f2a2a',
-          light: '#1a3c3c',
-          hover: '#1e4545',
+          DEFAULT: '#112233',
+          light: '#1c3352',
+          hover: '#243d61',
         },
         accent: {
-          DEFAULT: '#3d7a6e',
-          hover: '#2d5e55',
+          DEFAULT: '#4a90a4',
+          hover: '#357a8f',
         },
         gold: {
-          DEFAULT: '#c9a84c',
-          light: '#d4b86a',
+          DEFAULT: '#c8784a',
+          light: '#d98f65',
         },
-        background: '#f5f0eb',
+        background: '#f0f4f7',
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],

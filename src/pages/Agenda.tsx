@@ -242,7 +242,7 @@ export function Agenda() {
                   ? 'text-white'
                   : 'text-gray-600 hover:bg-gray-50'
               }`}
-              style={view === 'month' ? { backgroundColor: '#3d7a6e' } : {}}
+              style={view === 'month' ? { backgroundColor: '#4a90a4' } : {}}
             >
               <LayoutGrid size={14} />
               Mês
@@ -254,7 +254,7 @@ export function Agenda() {
                   ? 'text-white'
                   : 'text-gray-600 hover:bg-gray-50'
               }`}
-              style={view === 'day' ? { backgroundColor: '#3d7a6e' } : {}}
+              style={view === 'day' ? { backgroundColor: '#4a90a4' } : {}}
             >
               <List size={14} />
               Dia
@@ -344,9 +344,9 @@ export function Agenda() {
                         }`}
                         style={
                           todayDate
-                            ? { backgroundColor: '#c9a84c' }
+                            ? { backgroundColor: '#c8784a' }
                             : isSelected
-                            ? { backgroundColor: '#0f2a2a', color: 'white' }
+                            ? { backgroundColor: '#112233', color: 'white' }
                             : {}
                         }
                       >
@@ -388,7 +388,7 @@ export function Agenda() {
                   <button
                     onClick={() => openNewSession(selectedDate)}
                     className="p-1.5 rounded-lg text-white"
-                    style={{ backgroundColor: '#3d7a6e' }}
+                    style={{ backgroundColor: '#4a90a4' }}
                   >
                     <Plus size={14} />
                   </button>
@@ -598,7 +598,7 @@ export function Agenda() {
             <button
               onClick={handleSubmitSession}
               className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium transition-colors"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
             >
               Agendar
             </button>
@@ -642,7 +642,7 @@ export function Agenda() {
                     }`}
                     style={
                       paymentData.paymentMethod === method
-                        ? { borderColor: '#3d7a6e', color: '#3d7a6e' }
+                        ? { borderColor: '#4a90a4', color: '#4a90a4' }
                         : {}
                     }
                   >
@@ -663,7 +663,7 @@ export function Agenda() {
             <button
               onClick={handleCompleteWithPayment}
               className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
             >
               Confirmar
             </button>
@@ -695,7 +695,7 @@ function SessionCard({ session, patientName, onMarkStatus, compact }: SessionCar
             {session.startTime} – {session.endTime}
           </p>
           {!compact && (
-            <p className="font-medium mt-1" style={{ color: '#c9a84c' }}>
+            <p className="font-medium mt-1" style={{ color: '#c8784a' }}>
               {formatCurrency(session.price)}
             </p>
           )}

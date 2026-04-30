@@ -200,7 +200,7 @@ export function Settings() {
                       }`}
                       style={
                         form.workingDays.includes(day)
-                          ? { backgroundColor: '#0f2a2a' }
+                          ? { backgroundColor: '#112233' }
                           : {}
                       }
                     >
@@ -330,12 +330,12 @@ export function Settings() {
             <button
               onClick={handleSave}
               className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-white font-medium transition-colors"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#2d5e55';
+                (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#357a8f';
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#3d7a6e';
+                (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#4a90a4';
               }}
             >
               <Save size={16} />

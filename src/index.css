@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #0f2a2a;
-  --color-primary-light: #1a3c3c;
-  --color-primary-hover: #1e4545;
-  --color-accent: #3d7a6e;
-  --color-accent-hover: #2d5e55;
-  --color-gold: #c9a84c;
-  --color-gold-light: #d4b86a;
-  --color-background: #f5f0eb;
+  --color-primary: #112233;
+  --color-primary-light: #1c3352;
+  --color-primary-hover: #243d61;
+  --color-accent: #4a90a4;
+  --color-accent-hover: #357a8f;
+  --color-gold: #c8784a;
+  --color-gold-light: #d98f65;
+  --color-background: #f0f4f7;
 }
 
 * {
@@ -41,11 +41,11 @@ h1, h2, h3, h4 {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c9a84c44;
+  background: #c8784a44;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c9a84c88;
+  background: #c8784a88;
 }
 
 /* Input focus styles */
@@ -104,7 +104,7 @@ input:focus, select:focus, textarea:focus {
 
 /* Table row hover */
 tr:hover td {
-  background-color: rgba(61, 122, 110, 0.04);
+  background-color: rgba(74, 144, 164, 0.04);
 }
 
 /* Recharts tooltip */

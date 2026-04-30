@@ -181,7 +181,7 @@ export function Patients() {
                   <div className="flex items-start gap-3 mb-4">
                     <div
                       className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0"
-                      style={{ backgroundColor: '#3d7a6e' }}
+                      style={{ backgroundColor: '#4a90a4' }}
                     >
                       {patient.name.charAt(0)}
                     </div>
@@ -193,7 +193,7 @@ export function Patients() {
                     </div>
                     <span
                       className="text-sm font-semibold"
-                      style={{ color: '#c9a84c' }}
+                      style={{ color: '#c8784a' }}
                     >
                       {formatCurrency(patient.sessionPrice)}
                     </span>
@@ -374,7 +374,7 @@ export function Patients() {
             <button
               onClick={handleSubmit}
               className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
             >
               Cadastrar
             </button>

@@ -20,18 +20,18 @@ export function EmptyState({ title, description, actionLabel, onAction }: EmptyS
           width="60"
           height="64"
           rx="6"
-          stroke="#0f2a2a"
+          stroke="#112233"
           strokeWidth="3"
           fill="none"
         />
-        <rect x="20" y="20" width="40" height="4" rx="2" fill="#0f2a2a" opacity="0.4" />
-        <rect x="20" y="30" width="30" height="4" rx="2" fill="#0f2a2a" opacity="0.3" />
-        <rect x="20" y="40" width="35" height="4" rx="2" fill="#0f2a2a" opacity="0.2" />
-        <rect x="20" y="50" width="25" height="4" rx="2" fill="#0f2a2a" opacity="0.15" />
-        <circle cx="55" cy="55" r="15" fill="#3d7a6e" opacity="0.15" stroke="#3d7a6e" strokeWidth="2" />
+        <rect x="20" y="20" width="40" height="4" rx="2" fill="#112233" opacity="0.4" />
+        <rect x="20" y="30" width="30" height="4" rx="2" fill="#112233" opacity="0.3" />
+        <rect x="20" y="40" width="35" height="4" rx="2" fill="#112233" opacity="0.2" />
+        <rect x="20" y="50" width="25" height="4" rx="2" fill="#112233" opacity="0.15" />
+        <circle cx="55" cy="55" r="15" fill="#4a90a4" opacity="0.15" stroke="#4a90a4" strokeWidth="2" />
         <path
           d="M49 55h12M55 49v12"
-          stroke="#3d7a6e"
+          stroke="#4a90a4"
           strokeWidth="2.5"
           strokeLinecap="round"
           opacity="0.5"
@@ -48,12 +48,12 @@ export function EmptyState({ title, description, actionLabel, onAction }: EmptyS
         <button
           onClick={onAction}
           className="mt-6 px-5 py-2 rounded-lg text-white text-sm font-medium transition-colors"
-          style={{ backgroundColor: '#3d7a6e' }}
+          style={{ backgroundColor: '#4a90a4' }}
           onMouseEnter={(e) => {
-            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#2d5e55';
+            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#357a8f';
           }}
           onMouseLeave={(e) => {
-            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#3d7a6e';
+            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#4a90a4';
           }}
         >
           {actionLabel}

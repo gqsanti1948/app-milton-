@@ -265,7 +265,7 @@ export function PatientDetail() {
             </div>
             <div>
               <p className="text-xs text-gray-400 mb-0.5">Valor da Sessão</p>
-              <p className="text-sm font-semibold" style={{ color: '#c9a84c' }}>
+              <p className="text-sm font-semibold" style={{ color: '#c8784a' }}>
                 {formatCurrency(patient.sessionPrice)}
               </p>
             </div>
@@ -292,7 +292,7 @@ export function PatientDetail() {
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 tab === 'historico' ? 'text-white' : 'text-gray-600 hover:bg-gray-50'
               }`}
-              style={tab === 'historico' ? { backgroundColor: '#0f2a2a' } : {}}
+              style={tab === 'historico' ? { backgroundColor: '#112233' } : {}}
             >
               Histórico
             </button>
@@ -301,7 +301,7 @@ export function PatientDetail() {
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 tab === 'financeiro' ? 'text-white' : 'text-gray-600 hover:bg-gray-50'
               }`}
-              style={tab === 'financeiro' ? { backgroundColor: '#0f2a2a' } : {}}
+              style={tab === 'financeiro' ? { backgroundColor: '#112233' } : {}}
             >
               Financeiro
             </button>
@@ -450,7 +450,7 @@ export function PatientDetail() {
                           <div
                             className="h-2 rounded-full"
                             style={{
-                              backgroundColor: '#3d7a6e',
+                              backgroundColor: '#4a90a4',
                               width: `${(count / allPatientSessions.length) * 100}%`,
                             }}
                           />
@@ -596,7 +596,7 @@ export function PatientDetail() {
               <button
                 onClick={handleEditSubmit}
                 className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium"
-                style={{ backgroundColor: '#3d7a6e' }}
+                style={{ backgroundColor: '#4a90a4' }}
               >
                 Salvar
               </button>
@@ -630,7 +630,7 @@ export function PatientDetail() {
                       ? 'border-accent text-accent'
                       : 'border-gray-200 text-gray-600'
                   }`}
-                  style={payMethod === method ? { borderColor: '#3d7a6e', color: '#3d7a6e' } : {}}
+                  style={payMethod === method ? { borderColor: '#4a90a4', color: '#4a90a4' } : {}}
                 >
                   {labels[method]}
                 </button>
@@ -648,7 +648,7 @@ export function PatientDetail() {
             <button
               onClick={handleConfirmPayment}
               className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
             >
               Confirmar
             </button>

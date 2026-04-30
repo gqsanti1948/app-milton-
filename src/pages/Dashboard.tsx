@@ -104,7 +104,7 @@ export function Dashboard() {
           {/* Current Time */}
           <div
             className="lg:col-span-1 rounded-xl p-5 text-white flex flex-col justify-between"
-            style={{ backgroundColor: '#0f2a2a' }}
+            style={{ backgroundColor: '#112233' }}
           >
             <div className="flex items-center gap-2 opacity-70">
               <Clock size={14} />
@@ -175,9 +175,9 @@ export function Dashboard() {
             <div className="flex items-center gap-2 mb-3">
               <div
                 className="w-8 h-8 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: '#c9a84c22' }}
+                style={{ backgroundColor: '#c8784a22' }}
               >
-                <TrendingUp size={16} style={{ color: '#c9a84c' }} />
+                <TrendingUp size={16} style={{ color: '#c8784a' }} />
               </div>
               <span className="text-xs text-gray-500 uppercase tracking-wide">Recebido</span>
             </div>
@@ -222,7 +222,7 @@ export function Dashboard() {
                   tickLine={false}
                 />
                 <Tooltip
-                  cursor={{ fill: '#f5f0eb' }}
+                  cursor={{ fill: '#f0f4f7' }}
                   content={({ active, payload }) => {
                     if (active && payload && payload.length) {
                       return (
@@ -238,7 +238,7 @@ export function Dashboard() {
                 />
                 <Bar
                   dataKey="sessoes"
-                  fill="#3d7a6e"
+                  fill="#4a90a4"
                   radius={[4, 4, 0, 0]}
                 />
               </BarChart>
@@ -266,7 +266,7 @@ export function Dashboard() {
                     >
                       <div
                         className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5"
-                        style={{ backgroundColor: '#3d7a6e' }}
+                        style={{ backgroundColor: '#4a90a4' }}
                       >
                         {patient?.name.charAt(0) ?? '?'}
                       </div>
@@ -277,7 +277,7 @@ export function Dashboard() {
                         <p className="text-xs text-gray-500">
                           {formatDate(session.date)} às {session.startTime}
                         </p>
-                        <p className="text-xs font-medium" style={{ color: '#c9a84c' }}>
+                        <p className="text-xs font-medium" style={{ color: '#c8784a' }}>
                           {formatCurrency(session.price)}
                         </p>
                       </div>

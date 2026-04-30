@@ -28,7 +28,7 @@ import { useClinicConfig } from '../hooks/useClinicConfig';
 import { useToast } from '../hooks/useToast';
 import { formatCurrency, formatDate } from '../utils/formatters';
 
-const PIE_COLORS = ['#3d7a6e', '#c9a84c', '#0f2a2a', '#6b9e95'];
+const PIE_COLORS = ['#4a90a4', '#c8784a', '#112233', '#6aabb8'];
 
 const methodLabels: Record<string, string> = {
   pix: 'PIX',
@@ -179,7 +179,7 @@ export function Financial() {
                 <button
                   onClick={handleSaveGoal}
                   className="px-2 py-1 text-xs text-white rounded"
-                  style={{ backgroundColor: '#3d7a6e' }}
+                  style={{ backgroundColor: '#4a90a4' }}
                 >
                   OK
                 </button>
@@ -194,7 +194,7 @@ export function Financial() {
             <p className="text-xs text-gray-400 mb-1">% da Meta</p>
             <p
               className="text-2xl font-bold"
-              style={{ color: goalPercent >= 100 ? '#3d7a6e' : '#c9a84c' }}
+              style={{ color: goalPercent >= 100 ? '#4a90a4' : '#c8784a' }}
             >
               {goal > 0 ? `${goalPercent}%` : '—'}
             </p>
@@ -204,7 +204,7 @@ export function Financial() {
                   className="h-2 rounded-full transition-all"
                   style={{
                     width: `${goalPercent}%`,
-                    backgroundColor: goalPercent >= 100 ? '#3d7a6e' : '#c9a84c',
+                    backgroundColor: goalPercent >= 100 ? '#4a90a4' : '#c8784a',
                   }}
                 />
               </div>
@@ -248,15 +248,15 @@ export function Financial() {
                 <Line
                   type="monotone"
                   dataKey="recebido"
-                  stroke="#3d7a6e"
+                  stroke="#4a90a4"
                   strokeWidth={2.5}
-                  dot={{ fill: '#3d7a6e', r: 4 }}
+                  dot={{ fill: '#4a90a4', r: 4 }}
                   name="Recebido"
                 />
                 <Line
                   type="monotone"
                   dataKey="esperado"
-                  stroke="#c9a84c"
+                  stroke="#c8784a"
                   strokeWidth={2}
                   strokeDasharray="4 4"
                   dot={false}

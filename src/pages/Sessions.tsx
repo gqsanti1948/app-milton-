@@ -418,7 +418,7 @@ export function Sessions() {
                   className={`px-3 py-2 rounded-lg border text-sm font-medium transition-all ${
                     payMethod === method ? '' : 'border-gray-200 text-gray-600'
                   }`}
-                  style={payMethod === method ? { borderColor: '#3d7a6e', color: '#3d7a6e' } : {}}
+                  style={payMethod === method ? { borderColor: '#4a90a4', color: '#4a90a4' } : {}}
                 >
                   {labels[method]}
                 </button>
@@ -436,7 +436,7 @@ export function Sessions() {
             <button
               onClick={handleConfirmPayment}
               className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
             >
               Confirmar
             </button>

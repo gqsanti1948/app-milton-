@@ -124,9 +124,9 @@ export function Receipts() {
           <div className="bg-white rounded-xl border border-gray-100 p-5 flex items-center gap-4">
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: '#3d7a6e22' }}
+              style={{ backgroundColor: '#4a90a422' }}
             >
-              <FileText size={18} style={{ color: '#3d7a6e' }} />
+              <FileText size={18} style={{ color: '#4a90a4' }} />
             </div>
             <div>
               <p className="text-xs text-gray-400">Total de Recibos</p>
@@ -136,9 +136,9 @@ export function Receipts() {
           <div className="bg-white rounded-xl border border-gray-100 p-5 flex items-center gap-4">
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: '#c9a84c22' }}
+              style={{ backgroundColor: '#c8784a22' }}
             >
-              <span className="text-sm font-bold" style={{ color: '#c9a84c' }}>R$</span>
+              <span className="text-sm font-bold" style={{ color: '#c8784a' }}>R$</span>
             </div>
             <div>
               <p className="text-xs text-gray-400">Valor Total</p>
@@ -206,7 +206,7 @@ export function Receipts() {
                       <td className="px-4 py-3">
                         <span
                           className="text-sm font-mono font-medium"
-                          style={{ color: '#0f2a2a' }}
+                          style={{ color: '#112233' }}
                         >
                           {receipt.receiptNumber}
                         </span>
@@ -283,7 +283,7 @@ export function Receipts() {
                       }`}
                       style={
                         selectedSessionId === session.id
-                          ? { borderColor: '#3d7a6e', backgroundColor: '#f0faf8' }
+                          ? { borderColor: '#4a90a4', backgroundColor: '#eef6f9' }
                           : {}
                       }
                     >
@@ -295,7 +295,7 @@ export function Receipts() {
                           {formatDate(session.date)} às {session.startTime}
                         </p>
                       </div>
-                      <span className="text-sm font-semibold" style={{ color: '#c9a84c' }}>
+                      <span className="text-sm font-semibold" style={{ color: '#c8784a' }}>
                         {formatCurrency(session.price)}
                       </span>
                     </div>
@@ -315,7 +315,7 @@ export function Receipts() {
               onClick={handleIssueReceipt}
               disabled={!selectedSessionId || sessionsWithoutReceipt.length === 0}
               className="flex-1 px-4 py-2 rounded-lg text-white text-sm font-medium disabled:opacity-50"
-              style={{ backgroundColor: '#3d7a6e' }}
+              style={{ backgroundColor: '#4a90a4' }}
             >
               Gerar e Baixar PDF
             </button>

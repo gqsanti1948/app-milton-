@@ -19,7 +19,7 @@ function AppLayout() {
   }, []);
 
   return (
-    <div className="flex min-h-screen" style={{ backgroundColor: '#f5f0eb' }}>
+    <div className="flex min-h-screen" style={{ backgroundColor: '#f0f4f7' }}>
       <Sidebar />
       <main className="flex-1 ml-64 flex flex-col min-h-screen overflow-hidden">
         <Routes>

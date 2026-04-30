@@ -33,13 +33,13 @@ export function Sidebar() {
   return (
     <aside
       className="fixed left-0 top-0 h-full w-64 flex flex-col z-40"
-      style={{ backgroundColor: '#0f2a2a' }}
+      style={{ backgroundColor: '#112233' }}
     >
       {/* Logo */}
       <div className="px-6 py-6 border-b border-white/10">
         <h1
           className="text-2xl font-bold tracking-wide"
-          style={{ fontFamily: '"Cormorant Garamond", Georgia, serif', color: '#c9a84c' }}
+          style={{ fontFamily: '"Cormorant Garamond", Georgia, serif', color: '#c8784a' }}
         >
           PsiManager
         </h1>
@@ -62,7 +62,7 @@ export function Sidebar() {
             }
             style={({ isActive }) =>
               isActive
-                ? { borderColor: '#c9a84c', backgroundColor: '#1a3c3c' }
+                ? { borderColor: '#c8784a', backgroundColor: '#1c3352' }
                 : {}
             }
           >
@@ -71,7 +71,7 @@ export function Sidebar() {
                 <Icon
                   className="w-4.5 h-4.5 flex-shrink-0"
                   size={18}
-                  style={{ color: isActive ? '#c9a84c' : undefined }}
+                  style={{ color: isActive ? '#c8784a' : undefined }}
                 />
                 <span>{label}</span>
               </>

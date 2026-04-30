@@ -27,12 +27,12 @@ export function Header({ title, subtitle, actionButton }: HeaderProps) {
         <button
           onClick={actionButton.onClick}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white text-sm font-medium transition-colors"
-          style={{ backgroundColor: '#3d7a6e' }}
+          style={{ backgroundColor: '#4a90a4' }}
           onMouseEnter={(e) => {
-            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#2d5e55';
+            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#357a8f';
           }}
           onMouseLeave={(e) => {
-            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#3d7a6e';
+            (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#4a90a4';
           }}
         >
           {actionButton.icon && <actionButton.icon size={16} />}
